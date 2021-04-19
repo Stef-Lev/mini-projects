@@ -1,0 +1,131 @@
+footer {
+    font-family: 'Public Sans', sans-serif;
+    background-color: $headerBlue;
+    color: $white;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    div {
+        display: flex;
+        flex-direction: column;
+        img {
+            filter: brightness(5);
+        }
+        figure {
+            display: flex;
+            justify-content: space-between;
+            i {
+                font-size: 1.3em;
+                &:hover {
+                    color: mix($buttonGreen, $buttonBlue, $weight: 40%);
+                    cursor: pointer;
+                }
+            }
+        }
+        a {
+            font-family: 'Public Sans', sans-serif;
+            text-decoration: none;
+            color: #c1c1c1;
+            line-height: 30px;
+            &:hover {
+                color: mix($buttonGreen, $buttonBlue, $weight: 40%);
+                cursor: pointer;
+            }
+        }
+        p {
+            color: $lightGray;
+        }
+        .invite-btn {
+            display: block;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 30px;
+            background-image: linear-gradient(to right, $buttonGreen, $buttonBlue);
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+    }
+    div:first-of-type,
+    div:last-of-type {
+        justify-content: space-between;
+    }
+    div:first-of-type,
+    div:nth-of-type(2) {
+        margin-right: 10vw;
+    }
+    div:nth-of-type(3) {
+        margin-right: auto;
+    }
+    #btn-footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// footer responsive
+@media all and (max-width: 1040px) {
+    footer {
+        div:first-of-type,
+        div:nth-of-type(2) {
+            margin-right: 7vw;
+        }
+    }
+}
+
+@media all and (max-width: 875px) {
+    footer {
+        div:first-of-type,
+        div:nth-of-type(2) {
+            margin-right: 3vw;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: fit-content;
+            text-align: center;
+        }
+        div:first-of-type,
+        div:nth-of-type(2),
+        div:nth-of-type(3) {
+            margin: 0;
+        }
+        div:first-of-type {
+            img,
+            figure {
+                margin-bottom: 25px;
+            }
+        }
+        div:last-of-type {
+            .invite-btn,
+            p {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width:768px) {
+    .attribution {
+        font-size: 11px;
+    }
+}

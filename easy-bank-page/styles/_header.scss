@@ -1,0 +1,267 @@
+$headerBlue: hsl(233, 26%, 24%);
+$lightGray:hsl(233, 8%, 62%);
+$buttonGreen:hsl(136, 65%, 51%);
+$buttonBlue:hsl(192, 70%, 51%);
+$iconsGrey:hsl(220, 16%, 96%);
+$white: hsl(0, 0, 100%);
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: content-box;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    z-index: 7;
+    .invite-btn {
+        display: none;
+    }
+}
+
+.top-navbar {
+    .top-nav-links {
+        display: none;
+    }
+}
+
+.burger {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+}
+
+main {
+    .intro-set {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-images-mob {
+        position: relative;
+    }
+    .intro-images-desk {
+        display: none;
+    }
+    .mob-background-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: -18%;
+        margin-bottom: -8%;
+    }
+    .mob-background-phones {
+        position: absolute;
+        margin-top: -32%;
+        left: 5%;
+        width: 90%;
+    }
+    .intro-text {
+        position: relative;
+        margin: 0 auto;
+        padding: 0 8%;
+        padding-bottom: 100px;
+        text-align: center;
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            color: $headerBlue;
+            font-weight: 300;
+        }
+        p {
+            margin-top: 20px;
+            line-height: 2;
+            font-size: 1.1rem;
+            color: $lightGray;
+        }
+    }
+    .invite-btn {
+        border: none;
+        border-radius: 40px;
+        padding: 15px 30px;
+        background-image: linear-gradient(to right, $buttonGreen, $buttonBlue);
+        color: white;
+        font-size: 1rem;
+        margin: 25px auto;
+        font-size: 1rem;
+        font-weight: 700;
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    
+    
+    main {
+        .intro-set {
+            flex-direction: row-reverse;
+            z-index: 3;
+        }
+        .intro-text {
+            flex: 50%;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0 0 8%;
+            h1 {
+                font-size: 2.7rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        .intro-images-mob {
+            display: none;
+        }
+        .intro-images-desk {
+            display: flex;
+            flex: 50%;
+            position: relative;
+        }
+        .desk-background-img {
+            position: relative;
+            width: 150%;
+            margin-top: -31%;
+            margin-bottom: -10%;
+            z-index: -1;
+        }
+        .desk-background-phones {
+            position: absolute;
+            width: 90%;
+            margin-top: -14%;
+            margin-left: 25%;
+        }
+    }
+}
+
+@media all and (min-width: 900px) {
+    header {
+        .burger {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: $lightGray;
+            font-size: 1rem;
+        }
+        .invite-btn {
+            display: block;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 30px;
+            background-image: linear-gradient(to right, $buttonGreen, $buttonBlue);
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+    }
+    .top-navbar {
+        box-sizing: border-box;
+        .top-nav-links {
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        .top-nav-links li {
+            position: relative;
+            display: inline;
+            margin: 0 10px;
+            &::after {
+                content: " ";
+                display: block;
+                position: absolute;
+                background-image: linear-gradient(to right, $buttonGreen, $buttonBlue);
+                width: 100%;
+                height: 5px;
+                bottom: -34px;
+                transition: all 0.4s ease-in-out;
+                transform: scale(0);
+            }
+            &:hover::after {
+                transform: scale(1);
+            }
+        }
+    }
+
+}
+
+@media all and (min-width: 1000px) {
+    main {
+        .intro-text {
+            h1 {
+                font-size: 3.2rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1300px) {
+    main {
+        .intro-text {
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1700px) {
+    main {
+        .intro-text {
+            padding-right: 8%;
+            h1 {
+                font-size: 4.3rem;
+            }
+            p {
+                font-size: 1.7rem;
+            }
+        }
+        .desk-background-img {
+            position: relative;
+            width: 145%;
+            margin-top: -31%;
+            margin-bottom: -10%;
+            z-index: -1;
+        }
+        .desk-background-phones {
+            position: absolute;
+            width: 85%;
+            margin-top: -20%;
+            margin-left: 30%;
+        }
+    }
+}

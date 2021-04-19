@@ -1,0 +1,78 @@
+.articles{
+    padding: 100px 8%;
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+
+    h2{ 
+        color: $headerBlue;
+        font-size: 2.5em;
+        font-weight: 300; 
+    }
+
+    .articles-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+    .article{
+        flex-basis: 23%;
+        margin-top: 60px;
+        background-color: $white;
+        border-radius: 5px;
+        
+        img{
+            width: 100%;
+            height: 270px;
+            border-radius: 7px 7px 0 0;
+        }
+
+        figcaption{ 
+            color: $lightGray; 
+            font-size: 0.8em;
+            padding: 30px 10% 15px 10%;
+        }
+
+        div{
+            padding: 0 10% 25px 10%;
+
+            p{ 
+                color: $lightGray; 
+                line-height: 1.25em;
+            }
+
+            h4{ 
+                color: $headerBlue;
+                font-size: 1.3em; 
+                font-weight: 400;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1500px){
+    .articles{
+        .article{
+            img{ height: 215px; }
+        }
+    }    
+}
+
+@media all and (max-width: 1300px){
+    .articles{
+        .article{
+            flex-basis: 45%;
+            img{ height: 270px; }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    .articles{
+        .article{
+            flex-basis: 100%;
+            img{ height: auto; }
+        }
+    }
+}

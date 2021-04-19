@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Easybank landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/a35f8701c8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <img class="logotype" src="./images/logo.svg" alt="logo" src="./">
+        <nav class="top-navbar">
+            <ul class="top-nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger -->
+        <button type="button" class="burger">
+            <img class='button-image' src="./images/icon-hamburger.svg" alt="">
+        </button>
+
+
+        <!-- Button in navbar -->
+        <button class="invite-btn">Request Invite</button>
+    </header>
+
+    <main>
+
+
+        <section class="intro-set">
+            <div class="intro-images-mob">
+                <!-- mobile images -->
+                <img class="mob-background-img" src="./images/bg-intro-mobile.svg" alt="header-background" />
+                <img class="mob-background-phones" src="./images/image-mockups.png" alt="mobiles" />
+            </div>
+
+            <div class="intro-images-desk">
+                <!-- desktop images -->
+                <img class="desk-background-img" src="./images/bg-intro-desktop.svg" alt="header-background" />
+                <img class="desk-background-phones" src="./images/image-mockups.png" alt="mobiles" />
+            </div>
+
+            <div class="intro-text">
+                <div class="center">
+                    <h1>Next generation digital banking</h1>
+                    <p>
+                        Take your financial life online. Your Easybank account will be a one-stop-shop for spending,
+                        saving, budgeting, investing, and much more.
+                    </p>
+                    <button class="invite-btn">Request Invite</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="features">
+            <h2>Why choose Easybank?</h2>
+            <p>
+                We leverage Open Banking to turn your bank account into your financial hub. Control your finances like
+                never before.
+            </p>
+            <div class="icon-wrapper">
+                <section class="feature-icons">
+                    <img src="./images/icon-online.svg" alt="" />
+                    <h3>Online Banking</h3>
+                    <p>
+                        Our modern web and mobile applications allow you to keep track of your finances wherever you are
+                        in the world.
+                    </p>
+                </section>
+                <section class="feature-icons">
+                    <img src="./images/icon-budgeting.svg" alt="" />
+                    <h3>Simple Budgeting</h3>
+                    <p>
+                        See exactly where your money goes each month. Receive notifications when you're close to hitting
+                        your limits.
+                    </p>
+                </section>
+                <section class="feature-icons">
+                    <img src="./images/icon-onboarding.svg" alt="" />
+                    <h3>Fast Onboarding</h3>
+                    <p>
+                        We don't do branches. Open your account in minutes online and start taking control of your
+                        finances right away.
+                    </p>
+                </section>
+                <section class="feature-icons">
+                    <img src="./images/icon-api.svg" alt="" />
+                    <h3>Open API</h3>
+                    <p>
+                        Manage your savings, investments, pension, and much more from one account. Tracking your money
+                        has never been easier.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class="articles">
+            <h2>Latest Articles</h2>
+            <div class="articles-container">
+                <section class="article">
+                    <figure>
+                        <img src="./images/image-currency.jpg" alt="article1" />
+                        <figcaption>By Claire Robinson</figcaption>
+                    </figure>
+                    <div>
+                        <h4>Receive money in any currency with no fees</h4>
+                        <p>
+                            The world is getting smaller and we're becoming more mobile. So why should you be forced to
+                            only receive money in a single...
+                        </p>
+                    </div>
+                </section>
+                <section class="article">
+                    <figure>
+                        <img src="./images/image-restaurant.jpg" alt="article1" />
+                        <figcaption>By Wilson Hutton</figcaption>
+                    </figure>
+                    <div>
+                        <h4>Treat yourself without worrying about money</h4>
+                        <p>
+                            Our simple budgeting feature allows you to separate out your spending and set realistic
+                            limits each month. That means you...
+                        </p>
+                    </div>
+                </section>
+                <section class="article">
+                    <figure>
+                        <img src="./images/image-plane.jpg" alt="article1" />
+                        <figcaption>By Wilson Hutton</figcaption>
+                    </figure>
+                    <div>
+                        <h4>Take your Easybank card wherever you go</h4>
+                        <p>
+                            We want you to enjoy your travels. This is why we don't charge any fees on purchases while
+                            you're abroad. We'll even show you...
+                        </p>
+                    </div>
+                </section>
+                <section class="article">
+                    <figure>
+                        <img src="./images/image-confetti.jpg" alt="article1" />
+                        <figcaption>By Claire Robinson</figcaption>
+                    </figure>
+                    <div>
+                        <h4>Our invite-only Beta accounts are now live!</h4>
+                        <p>
+                            After a lot of hard work by the whole team, we're excited to launch our closed beta. It's
+                            easy to request an invite through the site ...
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./images/logo.svg" alt="logo">
+            <figure>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-instagram"></i>
+            </figure>
+        </div>
+        <div>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+        </div>
+        <div>
+            <a href="#">Careers</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div id="btn-footer-container">
+            <button class="invite-btn" type="button">Request Invite</button>
+            <p>© Easybank. All Rights Reserved</p>
+        </div>
+    </footer>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://www.stefanosleventis.com/" target="_blank">Stefanos Leventis</a>.
+    </div>
+    <!-- Collapse menu -->
+    <div class="menu-bckg">
+        <div class="nav-collapse">
+            <ul class="collapse-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
