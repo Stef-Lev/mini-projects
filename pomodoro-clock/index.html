@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b039c65688.js" crossorigin="anonymous"></script>
+
+    <title>Pomodoro Clock</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-row mainContainer align-items-center justify-content-center">
+        <div class="container-fluid text-center in-the-box col-12 ">
+            <h1>Pomodoro Clock</h1>
+            <h2>Session Length</h2>
+            <i class="fas fa-caret-up mb-3 length-button" id="length-up"></i>
+            <p id="length-display">0</p>
+            <i class="fas fa-caret-down mb-3 length-button" id="length-down"></i>
+            <div class="container-fluid timer d-flex flex-column align-items-center justify-content-center">
+                <div class="inside-text">
+                    <h2>Session</h2>
+                    <h3 id="time-display">0:00</h3>
+                    <i class="fas fa-play time-buttons" id="play"></i>
+                    <i class=" fas fa-pause time-buttons" id="pause"></i>
+                    <audio src="alarm-sound.mp3"></audio>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

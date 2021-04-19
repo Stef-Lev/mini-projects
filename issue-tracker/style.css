@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Exo 2', sans-serif;
+}
+.jumbotron {
+    background-color: rgb(236, 168, 136)!important;
+}
+div.well {
+    margin: 20px 0 20px 0;
+    background-color: rgb(243, 225, 219);
+    border:1px solid rgb(170, 166, 164);
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+a.btn.btn-warning, a.btn.btn-danger {
+    margin: 5px 12px 5px 0px;
+}

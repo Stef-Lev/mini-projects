@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: rgb(0, 97, 104);
+}
+.full-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.quote-box {
+    background-color: white;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    text-align: center;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+}
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 12px;
+}
+
+h2 {
+    color: rgb(255, 122, 89); 
+    font-size: 2.6rem; 
+    margin: 10px 0 35px 0;
+}
+p {
+    font-size: 1.1rem;
+    margin: 10px 0 20px 0;
+}
+
+i {
+    color: rgb(0, 97, 104);
+}
+
+span#quote {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px;
+    box-shadow: 2px 2px rgb(197, 82, 54);
+}
+
+a button.new-quote {
+    background-color: rgb(255, 122, 89);
+    border: 2px solid rgb(255, 122, 89);
+}
+
+a button.new-quote:link {
+    background-color: rgb(255, 122, 89);
+    border: 2px solid rgb(255, 122, 89);
+}
+a button.new-quote:visited {
+    background-color: rgb(255, 122, 89);
+    border: 2px solid rgb(255, 122, 89);
+}
+
+a button.new-quote:hover {
+    background-color: rgb(255, 153, 128);
+    border: 2px solid rgb(255, 153, 128);
+    cursor: pointer;
+}
+
+a button.new-quote:active {
+    background-color: rgb(255, 199, 154);
+    border: 2px solid rgb(255, 199, 154);
+}
+

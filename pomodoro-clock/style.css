@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: rgb(201, 44, 44);
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+div.inside-text h3 {
+    font-size:3.2rem;
+}
+#length-display {
+    font-size: 2.1rem;
+}
+.mainContainer {
+    height: 100vh;
+}
+
+.in-the-box {
+    margin: 15px;
+    padding: 15px;
+}
+.length-button {
+    font-size: 2.7rem;
+    color: white;
+    cursor: pointer;
+}
+.length-button:link {
+    color: white;
+}
+.length-button:visited {
+    color: white;
+}
+.length-button:hover {
+    color: sandybrown;
+}
+.length-button:active {
+    color: sandybrown;
+}
+.timer {
+    font-family: 'Orbitron', sans-serif;
+    border: 15px solid rgb(121, 33, 33) ;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+.time-buttons {
+    font-size: 2.2rem;
+    margin: 3px 10px 3px 10px;
+    color: white;
+    cursor: pointer;
+}
+.time-buttons:link {
+    color: white;
+}
+.time-buttons:visited {
+    color: white;
+}
+.time-buttons:hover {
+    color: sandybrown;
+}
+.time-buttons:active {
+    color: sandybrown;
+}
+#pomodoro {
+    position: absolute;
+    top: 120px;
+    left: 5vw;
+    height: 500px;
+    transform: rotate(20deg);
+}
+
+@media (max-width:576px){
+h1 {
+    font-size: 2.5rem;
+ }
+ h2 {
+     font-size: 1.5rem;
+ }
+ div.inside-text h3 {
+    font-size:3rem;
+}
+#length-display {
+    font-size: 1.8rem;
+}
+
+}
