@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+*{
+margin:0px;
+padding: 0px;
+}
+
+body {
+    margin-top: 70px;
+    background:rgb(36, 64, 100);
+    color: #fff;
+    font-size: 0.5rem!important;
+    font-family: 'Raleway', sans-serif;
+} 
+#gramsOutput,#kgOutput,#ozOutput{
+    font-size: 1.2rem!important;
+}
+
+@media (max-width: 576px) { 
+    h1 {font-size: 1.8rem!important;}
+    h4 {font-size: 1rem!important;}
+    input {font-size: 1rem!important;}
+ }
+
+@media (min-width: 576px) { 
+    h1 {font-size: 2rem!important;}
+    h4 {font-size: 1.2rem!important;}
+    input {font-size: 1.2rem!important;}
+ }
+
+@media (min-width: 768px) { 
+    h1 {font-size: 3.5rem!important;}
+    h4 {font-size: 1.5rem!important;}
+    input {font-size: 1.5rem!important;}
+ }
+
+@media (min-width: 992px) { 
+    h1 {font-size: 3.8rem!important;}
+    h4 {font-size: 1.5rem!important;}
+    input {font-size: 1.5rem!important;}
+ }
+

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+body {
+    background-color: #232323;
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+.square {
+    width: 30%;
+    background: #008080;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 30px;
+    transition: background 0.5s;
+    --webkit-transition: background 0.5s;
+    --moz-transition: background 0.5s;
+
+}
+#container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: 20px;
+}
+h1,h2,h3,p {
+    color: white;
+    margin: 0;
+    font-weight: normal;
+}
+h1 {
+    text-transform: uppercase;
+}
+
+h3 {
+    border: 2px solid white;
+    border-radius: 30px;
+    margin: 0;
+}
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+.selected {
+    background-color: #008080;
+    color: white;
+}
+.header{
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #008080;
+}
+#color-display {
+    text-align: center;
+    width: 300px;
+    padding: 10px 5px;
+    font-size: 2rem;
+    margin: 15px auto 0 auto;
+    text-transform: uppercase;
+}
+button {
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    height: 100%;
+    color: #008080;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.4s;
+    --webkit-transition: all 0.4s;
+    --moz-transition: all 0.4s;
+    outline: none;
+}
+#message{
+    display: inline-block;
+    width: 20%;
+    color: black;
+}
+button:hover {
+    color: white;
+    background-color: #008080;
+    cursor: pointer;
+}
+.square:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.5rem;
+}
+p,h2,h3,h4, input,button,label,select {
+    margin-bottom: 10px;
+}
+input, select {
+    border-radius: 5px;
+}
+
+div.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303952;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.calculator {
+    background-color: white;
+    border-radius: 20px;
+    width: 350px;
+}
+
+div.calc-header{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #c25858;
+    color: white;
+}
+div.calc-body{
+    padding: 10px;
+}
+.bill-section{
+    margin-bottom: 20px;
+}
+.service-section{
+    margin-bottom: 20px;
+}
+
+#bill {
+    height: 30px;
+    width: 180px;
+    padding: 5px;
+}
+#services {
+    width: 210px;
+    font-size:1.2rem;
+    padding: 5px;
+}
+#people {
+    width: 80px;
+    padding: 5px;
+}
+#calc-button {
+   padding: 5px;
+    font-size: 1.8rem;
+    background-color: #c25858;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+    cursor: pointer;
+}
+#calc-button:hover {
+    background-color: #fd7f7f; 
+ }
+
+input#bill{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.3rem;
+
+}
+input#people{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+
+}
+select#services{
+    font-family: 'Segoe UI', sans-serif;
+}
+

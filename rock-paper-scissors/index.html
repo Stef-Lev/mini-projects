@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Rock, paper, scissors!</title>
+    <script src="https://kit.fontawesome.com/b039c65688.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Main Interface -->
+    <div class="container text-center">
+        <h1 class="display-2">Rock Paper Scissors</h1>
+        <p>An all time classic</p>
+        <button id="restart" class="restart-btn btn btn-danger px-3">Restart</button>
+        <div id="score" class="score">
+            <div class="row finalscore justify-content-center">
+                <div class="player col-5 mx-2 py-2">Player: 0</div>
+                <div class="computer col-5 mx-2 py-2">Computer: 0</div>
+            </div>
+        </div>
+        <h2>Make your selection</h2>
+        <div class="choices">
+            <div class="row d-flex justify-content-around">
+                <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+                <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+                <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
+            </div>
+        </div>
+
+        <!-- Modal -->
+
+        <div class="my-modal">
+            <div id="result" class="modal-content">
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
