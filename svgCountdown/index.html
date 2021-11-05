@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="timer">
+            <input id="duration-input" value="30"/>
+            <div class="btn-container">
+                <button id="start-btn"><i class="fas fa-play"></i></button>
+                <button id="pause-btn"><i class="fas fa-pause"></i></button>
+            </div>
+        </div>
+        <svg width="400" height="400" class="dial">
+            <circle 
+                r="190" 
+                cx="200" 
+                cy="200" 
+                fill="transparent"
+                stroke="teal" 
+                stroke-width="15"
+                transform="rotate(-90 200 200)"
+                />
+        </svg>
+    </div>
+
+   
+    <script src="timer.js"></script>
+    <script src="index.js"></script>    
+</body>
+</html>
